@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;700&family=Poppins:wght@700&display=swap");
+
+$font-poppins: "Poppins", sans-serif;
+$font-albert: "Albert Sans", sans-serif;
+$color-bg-main: #2d2463;
+
+html,
+body,
+app-root {
+  height: 100%;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}

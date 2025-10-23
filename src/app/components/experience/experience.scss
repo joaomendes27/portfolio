@@ -1,0 +1,80 @@
+@import "../../../styles.scss";
+
+.experience-container {
+  width: 100vw;
+  background: $color-bg-main;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-left: 60px;
+  gap: 2.5rem;
+  box-sizing: border-box;
+
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: $font-poppins;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+}
+.experience-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: flex-start;
+
+  p {
+    font-size: 1.1rem;
+    font-family: $font-albert;
+    margin: 0;
+    line-height: 1.6;
+  }
+  .title-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+
+    .company-logo {
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 0.75rem;
+      }
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-family: $font-poppins;
+      margin: 0;
+      font-weight: 700;
+    }
+  }
+
+  .company-details {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      font-family: $font-poppins;
+      font-weight: 500;
+    }
+
+    .date {
+      margin-left: 0;
+      font-size: 1rem;
+      color: #fff;
+      font-family: $font-albert;
+    }
+  }
+}
