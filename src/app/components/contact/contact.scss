@@ -1,0 +1,50 @@
+@import "../../../styles.scss";
+
+.contact-container {
+  background: $color-bg-main;
+  color: #fff;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 2.2rem;
+    font-family: $font-poppins;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: $color-white;
+  color: $color-black;
+  font-family: $font-poppins;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.7rem;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+
+  img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+  }
+
+  &:hover {
+    background: #e0e0e0;
+    color: #181332;
+  }
+}
