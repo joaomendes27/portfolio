@@ -97,3 +97,58 @@
     filter: brightness(1.15);
   }
 }
+@media (max-width: 600px) {
+  .home-container {
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 0;
+    gap: 24px;
+    width: 100vw;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+
+  .photo-area {
+    width: 100%;
+    justify-content: center;
+    img {
+      max-width: 90vw;
+      width: 100%;
+      height: auto;
+      border-radius: 18px;
+    }
+  }
+
+  .info-area {
+    width: 100%;
+    gap: 12px;
+    h1 {
+      font-size: 2rem;
+      text-align: left;
+    }
+    h2 {
+      font-size: 1.3rem;
+      text-align: left;
+    }
+    p {
+      font-size: 1rem;
+      max-width: 100%;
+    }
+  }
+
+  .social-buttons {
+    gap: 10px;
+    .btn {
+      font-size: 0.95rem;
+      padding: 8px 12px;
+      img {
+        width: 18px;
+        height: 18px;
+        margin-right: 4px;
+      }
+    }
+  }
+}

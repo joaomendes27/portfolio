@@ -138,3 +138,9 @@
     transform: translateX(-50%) translateY(-6px);
   }
 }
+
+@media (max-width: 600px) {
+  .experience-container {
+    margin-top: -7rem;
+  }
+}
