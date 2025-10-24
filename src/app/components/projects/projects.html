@@ -1,99 +1,28 @@
 <div class="projects-container">
-  <h1>Projetos Pessoais</h1>
+  <h1>{{ texts[lang].projects.titulo }}</h1>
   <div class="projects-row">
-    <div class="project-card">
+    <div
+      class="project-card"
+      *ngFor="let projeto of texts[lang].projects.projetos"
+    >
       <div class="project-img-wrapper">
-        <img
-          src="/assets/projetoControleFinanceiro.png"
-          alt="Controle Financeiro"
-          class="project-img"
-        />
-        <a
-          href="https://github.com/joaomendes27/controle-financeiro-webapi"
-          target="_blank"
-          class="project-arrow"
-        >
+        <img [src]="projeto.imagem" [alt]="projeto.nome" class="project-img" />
+        <a [href]="projeto.github" target="_blank" class="project-arrow">
           <img src="/assets/projetoSeta.png" alt="Ir para o projeto" />
         </a>
       </div>
-      <button class="project-info-btn" (click)="openCard('financeiro')">
-        Ver detalhes
+      <button class="project-info-btn" (click)="openCard(projeto.id)">
+        {{ texts[lang].projects.detalhes }}
       </button>
-      <div class="project-info-card" *ngIf="activeCard === 'financeiro'">
+      <div class="project-info-card" *ngIf="activeCard === projeto.id">
+        <p *ngFor="let desc of projeto.descricao">{{ desc }}</p>
         <p>
-          WebApi desenvolvida para controle financeiro pessoal, com o objetivo
-          do usuário ter o controle das suas despesas e receitas mensais de
-          forma simples e eficiente.
+          <span class="underline">
+            {{ texts[lang].projects.tecnologiasTitulo }}
+          </span>
         </p>
-        <p>
-          Além disso permite a possibilidade de gerar relatórios mensais com as
-          informações coletadas.
-        </p>
-        <p><span class="underline">Tecnologias utilizadas:</span></p>
-        <p>Backend: ASP.NET Core, Entity Framework e Autenticação JWT</p>
-        <p>Frontend: Angular</p>
-        <p>Banco de Dados: SQL Server</p>
-        <button (click)="closeCard()">Fechar</button>
-      </div>
-    </div>
-    <div class="project-card">
-      <div class="project-img-wrapper">
-        <img
-          src="/assets/projetoControleVendas.png"
-          alt="Controle de Vendas"
-          class="project-img"
-        />
-        <a
-          href="https://github.com/joaomendes27/SalesWebMVC"
-          target="_blank"
-          class="project-arrow"
-        >
-          <img src="/assets/projetoSeta.png" alt="Ir para o projeto" />
-        </a>
-      </div>
-      <button class="project-info-btn" (click)="openCard('vendas')">
-        Ver detalhes
-      </button>
-      <div class="project-info-card" *ngIf="activeCard === 'vendas'">
-        <p>
-          Sistema CRUD de funcionários, departamentos e vendas, permitindo o
-          gerenciamento eficiente de todos os processos envolvidos.
-        </p>
-        <p><span class="underline">Tecnologias utilizadas:</span></p>
-        <p>Backend: ASP.NET Core MVC, Entity Framework Core</p>
-        <p>Frontend: Razor Views (ASP.NET Core MVC)</p>
-        <p>Banco de Dados: SQL Server</p>
-        <button (click)="closeCard()">Fechar</button>
-      </div>
-    </div>
-    <div class="project-card">
-      <div class="project-img-wrapper">
-        <img
-          src="/assets/projetoPortfolio.png"
-          alt="Portfolio"
-          class="project-img"
-        />
-        <a
-          href="https://github.com/joaomendes27/portfolio"
-          target="_blank"
-          class="project-arrow"
-        >
-          <img src="/assets/projetoSeta.png" alt="Ir para o projeto" />
-        </a>
-      </div>
-      <button class="project-info-btn" (click)="openCard('portfolio')">
-        Ver detalhes
-      </button>
-      <div class="project-info-card" *ngIf="activeCard === 'portfolio'">
-        <p>
-          Este portfólio que você está vendo foi desenvolvido utilizando Angular
-          para o frontend, com estilização em SCSS e organização modular de
-          componentes.
-        </p>
-        <p><span class="underline">Tecnologias utilizadas:</span></p>
-        <p>Frontend: Angular, SCSS</p>
-        <p>Bibliotecas: AOS</p>
-        <button (click)="closeCard()">Fechar</button>
+        <p *ngFor="let tech of projeto.tecnologias">{{ tech }}</p>
+        <button (click)="closeCard()">{{ texts[lang].projects.fechar }}</button>
       </div>
     </div>
   </div>

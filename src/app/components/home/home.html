@@ -3,13 +3,10 @@
     <img src="/assets/perfil.jpg" alt="Foto de João Mendes" />
   </div>
   <div class="info-area">
-    <h1>Olá! Meu nome é João Mendes</h1>
-    <h2>Desenvolvedor Full-Stack</h2>
-    <p>Desenvolvedor com experiência em .NET, Angular, JavaScript e RPA.</p>
-    <p>
-      Aplicando meus conhecimentos na criação de softwares robustos que atendam
-      às necessidades de negócios e aos padrões do mercado.
-    </p>
+    <h1>{{ texts[lang].home.titulo }}</h1>
+    <h2>{{ texts[lang].home.subtitulo }}</h2>
+    <p>{{ texts[lang].home.descricao1 }}</p>
+    <p>{{ texts[lang].home.descricao2 }}</p>
     <div class="social-buttons">
       <a
         href="https://www.linkedin.com/in/joaovictormendeslima/"
@@ -17,7 +14,7 @@
         class="btn linkedin"
       >
         <img src="/assets/iconeLinkedin.png" alt="LinkedIn" />
-        Linkedin
+        {{ texts[lang].home.linkedin }}
       </a>
       <a
         href="https://github.com/joaomendes27"
@@ -25,11 +22,11 @@
         class="btn github"
       >
         <img src="/assets/iconeGithub.png" alt="GitHub" />
-        GitHub
+        {{ texts[lang].home.github }}
       </a>
       <a href="/assets/perfil.jpg" download class="btn curriculo">
         <img src="/assets/iconeCurriculo.png" alt="Currículo" />
-        Currículo
+        {{ texts[lang].home.curriculo }}
       </a>
     </div>
   </div>

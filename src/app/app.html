@@ -1,8 +1,16 @@
 <nav class="navbar">
   <ul>
-    <li><a href="#experiencia">Experiência</a></li>
-    <li><a href="#projetos">Projetos</a></li>
-    <li><a href="#contato">Contato</a></li>
+    <li>
+      <a href="#experiencia">{{
+        texts[lang].navbar?.experiencia || "Experiência"
+      }}</a>
+    </li>
+    <li>
+      <a href="#projetos">{{ texts[lang].navbar?.projetos || "Projetos" }}</a>
+    </li>
+    <li>
+      <a href="#contato">{{ texts[lang].navbar?.contato || "Contato" }}</a>
+    </li>
   </ul>
   <button class="lang-btn" (click)="toggleLang()">
     {{ lang === "pt" ? "PT-BR" : "EN" }}
