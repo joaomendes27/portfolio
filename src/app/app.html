@@ -1,5 +1,27 @@
-<app-home></app-home>
-<app-experience data-aos="fade-up" data-aos-duration="600"></app-experience>
-<app-projects data-aos="fade-up" data-aos-duration="600"></app-projects>
+<nav class="navbar">
+  <ul>
+    <li><a href="#experiencia">Experiência</a></li>
+    <li><a href="#projetos">Projetos</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+  <button class="lang-btn" (click)="toggleLang()">
+    {{ lang === "pt" ? "PT-BR" : "EN" }}
+  </button>
+</nav>
 
-<app-contact data-aos="fade-up" data-aos-duration="600"></app-contact>
+<app-home></app-home>
+<app-experience
+  id="experiencia"
+  data-aos="fade-up"
+  data-aos-duration="600"
+></app-experience>
+<app-projects
+  id="projetos"
+  data-aos="fade-up"
+  data-aos-duration="600"
+></app-projects>
+<app-contact
+  id="contato"
+  data-aos="fade-up"
+  data-aos-duration="600"
+></app-contact>

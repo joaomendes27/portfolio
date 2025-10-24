@@ -13,4 +13,9 @@ import { Contact } from './components/contact/contact';
 })
 export class App {
   protected readonly title = signal('meu-portfolio');
+  lang: 'pt' | 'en' = 'pt';
+
+  toggleLang() {
+    this.lang = this.lang === 'pt' ? 'en' : 'pt';
+  }
 }
