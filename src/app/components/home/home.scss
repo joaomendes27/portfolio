@@ -6,10 +6,30 @@
   box-sizing: border-box;
 }
 
-.home-container {
+.home-bg-wrapper {
+  position: relative;
   width: 100%;
   min-height: 100vh;
-  background: $color-bg-main;
+  overflow: hidden;
+  background: $color-bg-main; // <-- coloque o fundo aqui!
+}
+
+#home-particles-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+.home-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+  // REMOVA ou comente esta linha:
+  // background: $color-bg-main;
   color: #fff;
   display: flex;
   flex-direction: row;

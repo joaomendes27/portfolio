@@ -1,33 +1,36 @@
-<div class="home-container">
-  <div class="photo-area">
-    <img src="/assets/perfil.jpg" alt="Foto de João Mendes" />
-  </div>
-  <div class="info-area">
-    <h1>{{ texts[lang].home.titulo }}</h1>
-    <h2>{{ texts[lang].home.subtitulo }}</h2>
-    <p>{{ texts[lang].home.descricao1 }}</p>
-    <p>{{ texts[lang].home.descricao2 }}</p>
-    <div class="social-buttons">
-      <a
-        href="https://www.linkedin.com/in/joaovictormendeslima/"
-        target="_blank"
-        class="btn linkedin"
-      >
-        <img src="/assets/iconeLinkedin.png" alt="LinkedIn" />
-        {{ texts[lang].home.linkedin }}
-      </a>
-      <a
-        href="https://github.com/joaomendes27"
-        target="_blank"
-        class="btn github"
-      >
-        <img src="/assets/iconeGithub.png" alt="GitHub" />
-        {{ texts[lang].home.github }}
-      </a>
-      <a href="/assets/perfil.jpg" download class="btn curriculo">
-        <img src="/assets/iconeCurriculo.png" alt="Currículo" />
-        {{ texts[lang].home.curriculo }}
-      </a>
+<div class="home-bg-wrapper">
+  <canvas id="home-particles-canvas"></canvas>
+  <div class="home-container">
+    <div class="photo-area">
+      <img src="/assets/perfil.jpg" alt="Foto de João Mendes" />
+    </div>
+    <div class="info-area">
+      <h1>{{ texts[lang].home.titulo }}</h1>
+      <h2>{{ texts[lang].home.subtitulo }}</h2>
+      <p>{{ texts[lang].home.descricao1 }}</p>
+      <p>{{ texts[lang].home.descricao2 }}</p>
+      <div class="social-buttons">
+        <a
+          href="https://www.linkedin.com/in/joaovictormendeslima/"
+          target="_blank"
+          class="btn linkedin"
+        >
+          <img src="/assets/iconeLinkedin.png" alt="LinkedIn" />
+          {{ texts[lang].home.linkedin }}
+        </a>
+        <a
+          href="https://github.com/joaomendes27"
+          target="_blank"
+          class="btn github"
+        >
+          <img src="/assets/iconeGithub.png" alt="GitHub" />
+          {{ texts[lang].home.github }}
+        </a>
+        <a href="/assets/perfil.jpg" download class="btn curriculo">
+          <img src="/assets/iconeCurriculo.png" alt="Currículo" />
+          {{ texts[lang].home.curriculo }}
+        </a>
+      </div>
     </div>
   </div>
 </div>
