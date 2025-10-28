@@ -1,6 +1,9 @@
 <nav class="navbar">
   <ul>
     <li>
+      <a href="#home">{{ texts[lang].navbar?.inicio || "Início" }}</a>
+    </li>
+    <li>
       <a href="#experiencia">{{
         texts[lang].navbar?.experiencia || "Experiência"
       }}</a>
@@ -17,7 +20,7 @@
   </button>
 </nav>
 
-<app-home></app-home>
+<app-home id="home"></app-home>
 <app-experience
   id="experiencia"
   data-aos="fade-up"

@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
 import { TEXTS } from '../../texts/texts';
 import { LanguageService } from '../../services/languageService';
-import { LottieComponent } from 'ngx-lottie';
 
 @Component({
   selector: 'app-contact',
-  imports: [LottieComponent],
   templateUrl: './contact.html',
   styleUrls: ['./contact.scss'],
 })

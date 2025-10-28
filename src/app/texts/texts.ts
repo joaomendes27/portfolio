@@ -1,6 +1,7 @@
 export const TEXTS = {
   pt: {
     navbar: {
+      inicio: 'Início',
       experiencia: 'Experiência',
       projetos: 'Projetos',
       contato: 'Contato',
@@ -95,6 +96,7 @@ export const TEXTS = {
   },
   en: {
     navbar: {
+      inicio: 'Home',
       experiencia: 'Work Experience',
       projetos: 'Projects',
       contato: 'Contact',
