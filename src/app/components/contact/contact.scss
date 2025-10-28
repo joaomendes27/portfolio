@@ -21,6 +21,12 @@
   display: flex;
   gap: 2rem;
   justify-content: center;
+
+  @media (max-width: 600px) {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .contact-btn {
@@ -46,5 +52,15 @@
   &:hover {
     background: #e0e0e0;
     color: #181332;
+  }
+  @media (max-width: 600px) {
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+
+    img {
+      width: 2rem; // 20px -> 1.25rem
+      height: 2rem; // 20px -> 1.25rem
+    }
   }
 }

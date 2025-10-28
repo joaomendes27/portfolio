@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  background: rgba(10, 10, 10, 0.6);
+  background: rgba(14, 14, 14, 0.6);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   padding: 0.5rem 0;
@@ -27,7 +27,7 @@
     color: #fff;
     font-family: $font-poppins;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-decoration: none;
     padding: 0.5rem 1.2rem;
     border-radius: 0.5rem;
@@ -56,5 +56,25 @@
   &:hover {
     background: #e0e0e0;
     color: $color-black;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    justify-content: flex-end;
+    padding-right: 1rem;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .lang-btn {
+    position: static;
+    top: auto;
+    right: auto;
+    transform: none;
+    z-index: 200;
+    display: block;
   }
 }

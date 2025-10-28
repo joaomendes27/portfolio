@@ -41,14 +41,14 @@ export class Home implements AfterViewInit {
     if (!ctx) return;
 
     const resizeCanvas = () => {
-      const wrapper = canvas.parentElement as HTMLElement;
-      if (wrapper) {
-        canvas.width = wrapper.clientWidth;
-        canvas.height = wrapper.clientHeight;
-      }
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
     };
 
     resizeCanvas();
+    const resizeObserver = new ResizeObserver(resizeCanvas);
+    resizeObserver.observe(document.body);
+
     window.addEventListener('resize', resizeCanvas);
 
     const PARTICLE_COUNT = 60;

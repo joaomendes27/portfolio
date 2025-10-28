@@ -141,6 +141,45 @@
 
 @media (max-width: 600px) {
   .experience-container {
-    margin-top: -7rem;
+    margin-top: -1rem;
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  .experience-info {
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+    padding: 0.7rem;
+
+    p {
+      margin-bottom: 1.2rem; // aumenta o espaço entre os parágrafos
+    }
+  }
+  .tech-stack {
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+
+    .tech-logos {
+      margin-top: 1rem;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-left: 0.5rem;
+      width: 100%;
+      max-width: 90%;
+      img {
+        height: 3rem;
+        max-width: 100%;
+      }
+    }
+  }
+}
+@media (min-width: 1800px) {
+  .experience-info {
+    max-width: 70%;
+    width: 70%vw;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
