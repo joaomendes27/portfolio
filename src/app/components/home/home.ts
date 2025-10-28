@@ -88,7 +88,7 @@ export class Home implements AfterViewInit {
     ctx.globalAlpha = p.alpha;
     ctx.beginPath();
     ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-    ctx.fillStyle = '#3f88e1ff';
+    ctx.fillStyle = '#969696ff';
     ctx.shadowColor = '#fff';
     ctx.shadowBlur = 8;
     ctx.fill();

@@ -11,7 +11,7 @@
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  background: $color-bg-main; // <-- coloque o fundo aqui!
+  background: $color-bg-main;
 }
 
 #home-particles-canvas {
@@ -24,12 +24,12 @@
   pointer-events: none;
 }
 .home-container {
+  margin-top: 1rem;
   position: relative;
   z-index: 1;
   width: 100%;
   min-height: 100vh;
-  // REMOVA ou comente esta linha:
-  // background: $color-bg-main;
+
   color: #fff;
   display: flex;
   flex-direction: row;
@@ -51,7 +51,7 @@
     border-radius: 18px;
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
     object-fit: cover;
-    border: 2px solid #000;
+    border: 2px solid #3a3a3a;
   }
 }
 
