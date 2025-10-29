@@ -1,4 +1,8 @@
 <nav class="navbar">
+  <button class="navbar-burger" (click)="toggleMenu()" aria-label="Abrir menu">
+    <img src="/assets/iconeMenu.png" alt="Menu" />
+  </button>
+
   <ul>
     <li>
       <a href="#home">{{ texts[lang].navbar?.inicio || "Início" }}</a>
@@ -15,9 +19,25 @@
       <a href="#contato">{{ texts[lang].navbar?.contato || "Contato" }}</a>
     </li>
   </ul>
+
   <button class="lang-btn" (click)="toggleLang()">
     {{ lang === "pt" ? "PT-BR" : "EN" }}
   </button>
+
+  <div class="navbar-mobile-menu" [class.open]="menuOpen">
+    <a href="#home" (click)="toggleMenu()">{{
+      texts[lang].navbar?.inicio || "Início"
+    }}</a>
+    <a href="#experiencia" (click)="toggleMenu()">{{
+      texts[lang].navbar?.experiencia || "Experiência"
+    }}</a>
+    <a href="#projetos" (click)="toggleMenu()">{{
+      texts[lang].navbar?.projetos || "Projetos"
+    }}</a>
+    <a href="#contato" (click)="toggleMenu()">{{
+      texts[lang].navbar?.contato || "Contato"
+    }}</a>
+  </div>
 </nav>
 
 <app-home id="home"></app-home>
