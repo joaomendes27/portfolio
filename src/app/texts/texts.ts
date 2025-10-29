@@ -60,7 +60,7 @@ export const TEXTS = {
             'Banco de Dados: SQL Server',
           ],
           github: 'https://github.com/joaomendes27/controle-financeiro-webapi',
-          imagem: '/assets/projetoControleFinanceiro.png',
+          imagem: 'assets/projetoControleFinanceiro.png',
         },
         {
           id: 'vendas',
@@ -74,7 +74,7 @@ export const TEXTS = {
             'Banco de Dados: SQL Server',
           ],
           github: 'https://github.com/joaomendes27/SalesWebMVC',
-          imagem: '/assets/projetoControleVendas.png',
+          imagem: 'assets/projetoControleVendas.png',
         },
         {
           id: 'portfolio',
@@ -84,7 +84,7 @@ export const TEXTS = {
           ],
           tecnologias: ['Frontend: Angular, SCSS', 'Bibliotecas: AOS'],
           github: 'https://github.com/joaomendes27/portfolio',
-          imagem: '/assets/projetoPortfolio.png',
+          imagem: 'assets/projetoPortfolio.png',
         },
       ],
     },
@@ -155,7 +155,7 @@ export const TEXTS = {
             'Database: SQL Server',
           ],
           github: 'https://github.com/joaomendes27/controle-financeiro-webapi',
-          imagem: '/assets/projetoControleFinanceiro.png',
+          imagem: 'assets/projetoControleFinanceiro.png',
         },
         {
           id: 'vendas',
@@ -169,7 +169,7 @@ export const TEXTS = {
             'Database: SQL Server',
           ],
           github: 'https://github.com/joaomendes27/SalesWebMVC',
-          imagem: '/assets/projetoControleVendas.png',
+          imagem: 'assets/projetoControleVendas.png',
         },
         {
           id: 'portfolio',
@@ -179,7 +179,7 @@ export const TEXTS = {
           ],
           tecnologias: ['Frontend: Angular, SCSS', 'Libraries: AOS'],
           github: 'https://github.com/joaomendes27/portfolio',
-          imagem: '/assets/projetoPortfolio.png',
+          imagem: 'assets/projetoPortfolio.png',
         },
       ],
     },

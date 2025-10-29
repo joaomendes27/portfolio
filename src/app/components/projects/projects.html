@@ -6,7 +6,24 @@
       *ngFor="let projeto of texts[lang].projects.projetos"
     >
       <div class="project-img-wrapper">
-        <img [src]="projeto.imagem" [alt]="projeto.nome" class="project-img" />
+        <img
+          *ngIf="projeto.id === 'financeiro'"
+          src="assets/projetoControleFinanceiro.png"
+          [alt]="projeto.nome"
+          class="project-img"
+        />
+        <img
+          *ngIf="projeto.id === 'vendas'"
+          src="assets/projetoControleVendas.png"
+          [alt]="projeto.nome"
+          class="project-img"
+        />
+        <img
+          *ngIf="projeto.id === 'portfolio'"
+          src="assets/projetoPortfolio.png"
+          [alt]="projeto.nome"
+          class="project-img"
+        />
         <a [href]="projeto.github" target="_blank" class="project-arrow">
           <img src="assets/projetoSeta.png" alt="Ir para o projeto" />
         </a>
