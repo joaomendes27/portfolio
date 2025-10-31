@@ -179,6 +179,82 @@
     }
   }
 }
+@media (max-width: 1200px) {
+  .home-container {
+    gap: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .photo-area img {
+    max-width: 350px;
+  }
+  .info-area h1 {
+    font-size: 2.2rem;
+  }
+  .info-area h2 {
+    font-size: 1.2rem;
+  }
+  .info-area p {
+    font-size: 1rem;
+    max-width: 90vw;
+  }
+}
+@media (max-width: 900px) {
+  .home-container {
+    max-width: 600px;
+    width: 100%; // Use 100% para respeitar o max-width e centralizar
+    margin: 4rem auto 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 1rem;
+    min-height: 100vh;
+    margin-bottom: 0;
+  }
+  .photo-area {
+    width: 100%;
+    img {
+      max-width: 80vw;
+      width: 100%;
+      height: auto;
+      border-radius: 18px;
+    }
+  }
+  .info-area {
+    width: 100%;
+    gap: 10px;
+    h1,
+    h2,
+    p {
+      text-align: center;
+    }
+    h1 {
+      font-size: 1.7rem;
+    }
+    h2 {
+      font-size: 1.1rem;
+    }
+    p {
+      font-size: 0.98rem;
+      max-width: 100%;
+    }
+  }
+  .social-buttons {
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    .btn {
+      font-size: 0.92rem;
+      padding: 7px 10px;
+      img {
+        width: 16px;
+        height: 16px;
+        margin-right: 3px;
+      }
+    }
+  }
+}
 @media (min-width: 1800px) {
   .home-bg-wrapper {
     width: 100vw;
