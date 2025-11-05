@@ -52,7 +52,10 @@ export const TEXTS = {
           nome: 'Controle Financeiro',
           descricao: [
             'WebApi desenvolvida para controle financeiro pessoal, com o objetivo do usuário ter o controle das suas despesas e receitas mensais de forma simples e eficiente.',
-            'Além disso permite a possibilidade de gerar relatórios mensais com as informações coletadas.',
+            '• Automação de Transações: Permite o lançamento automático de transações recorrentes, como salários e contas mensais, sem necessidade de inserção manual.',
+            '• Gráficos Interativos: Exibe gráficos dinâmicos para análise visual dos gastos e ganhos, facilitando o acompanhamento do fluxo financeiro.',
+            '• Comparação Mensal: Funcionalidade que permite comparar a situação financeira atual com o mês anterior',
+            '• Além disso permite a possibilidade de gerar relatórios mensais em excel e pdf com as informações coletadas.',
           ],
           tecnologias: [
             'Backend: ASP.NET Core, Entity Framework e Autenticação JWT',
@@ -146,8 +149,11 @@ export const TEXTS = {
           id: 'financeiro',
           nome: 'Finance Control',
           descricao: [
-            'WebApi developed for personal finance control, allowing users to manage their monthly expenses and income simply and efficiently.',
-            'Also allows generating monthly reports with the collected information.',
+            'WebAPI built for personal finance management, giving users a simple and efficient way to track monthly income and expenses.',
+            '• Transaction automation: automatically posts recurring entries such as salaries and monthly bills, with no manual input.',
+            '• Interactive charts: dynamic visuals to analyze spending and income, making it easy to follow cash flow.',
+            '• Monthly comparison: compare the current month with the previous one, providing insights into financial performance over time.',
+            '• Report export: generate monthly reports in Excel and PDF with the collected data.',
           ],
           tecnologias: [
             'Backend: ASP.NET Core, Entity Framework and JWT Authentication',
